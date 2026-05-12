@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Edit an Article</h1>
+  <!-- <form action="/articles" method="post"> -->
+  <%= simple_form_for @article do |f| %>
+    <%= f.input :title %>
+    <%= f.input :content %>
+    <%= f.submit class: 'btn btn-primary mt-3' %>
+  <% end %>
+  <%= link_to "Home", articles_path, class: 'btn btn-primary' %>
+</div>

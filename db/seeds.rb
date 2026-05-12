@@ -7,3 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+
+# user faker to generate 10 fake articles to seed my db
+10.times do
+  Article.create(
+    title: Faker::Movies::HitchhikersGuideToTheGalaxy.marvin_quote, content: Faker::Hipster.paragraph)
+end
