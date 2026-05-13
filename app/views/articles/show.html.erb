@@ -1,5 +1,8 @@
-<h1><%= @article.title %></h1>
-<p><%= @article.content %></p>
-
-<%= link_to "Home", articles_path, class: 'btn btn-primary' %>
-<%= link_to "Edit Article", edit_article_path, class: 'btn btn-primary' %>
+<div class="container my-4">
+  <h1 class="my-4"><%= @article.title %></h1>
+  <p class="my-4"><%= @article.content %></p>
+  <div class="d-flex flex-column" >
+  <%= link_to "Edit Article", edit_article_path, class: 'btn btn-success my-2 col-2' %>
+  <%= link_to "Home", articles_path, class: 'btn btn-primary my-2 col-2' %>
+  </div>
+</div>
